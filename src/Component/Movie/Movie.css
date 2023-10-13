@@ -1,0 +1,38 @@
+.div__all {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+}
+h1 {
+     font-size: var(--font-new);
+     line-height: 140px;
+     font-weight: 800
+}
+.containerss {
+     display: grid;
+     gap: 3rem;
+     grid-template-columns: repeat(2,1fr) ;
+     margin: 2rem 6rem;
+}
+
+@media screen and (max-width: 600px) {
+     .containerss {
+          display: grid;
+          grid-template-columns: repeat(1,1fr) ;
+     }
+     h1 {
+          line-height: 100px;
+          font-weight: 800
+     }
+     
+    
+};
+
+@media screen and (max-width: 768px) {
+     .containerss {
+          display: grid;
+          grid-template-columns: repeat(2,1fr) ;
+     }
+};
+
